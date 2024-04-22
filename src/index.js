@@ -1,8 +1,17 @@
-import _ from "lodash";
+import _, { entries } from "lodash";
 import "./styles/style.css";
 import "./styles/reset.css";
 
-const hello = document.createElement("p");
-hello.textContent = "hello world";
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
 
-document.appendChild(hello);
+const partElements = document.querySelectorAll(".part");
+partElements.forEach((el) => observer.observe(el));

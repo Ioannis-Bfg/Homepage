@@ -1,21 +1,28 @@
 /* ////////////////////////////////////////// */
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"); */
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: lightblue;
 }
 
 html {
   width: 100%;
 }
 body {
-  width: 100%;
-  background-image: url("../images/blurry-gradient-haikei.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   overflow-x: hidden;
-  background-size: cover;
+}
+
+.part {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s ease;
+}
+
+.show {
+  filter: blur(0px);
+  opacity: 1;
 }
 
 #main_container {
@@ -62,30 +69,38 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  /* background-color: lightblue; */
   /* width: 100%; */
 }
 
 #hero_wave_bottom {
   position: absolute;
-  bottom: -1vh;
+  bottom: -2rem;
   left: 0;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   line-height: 0;
   z-index: -1;
 }
 
 #main_image_container {
-  aspect-ratio: 3/4;
+  /* aspect-ratio: 3/4; */
   width: 350px;
-  background-image: url(../images/hero.jpg);
-  background-size: 220%;
+  max-height: 470px;
   z-index: 1;
-  background-repeat: no-repeat;
-  background-position: 80% 90%;
   -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);
   border-radius: 5px;
+  overflow: hidden;
+}
+
+#main_image_container img {
+  /* background-repeat: no-repeat; */
+  /* background-position: 80% 90%; */
+  /* background-size: 220%; */
+  width: 350px;
+  aspect-ratio: 3/4;
+  height: 480px;
 }
 /* 
 #hero_background {
@@ -119,7 +134,7 @@ body {
   animation: fadeDown 0.4s ease-out 0.8s both;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
   font-size: 1.3rem;
 }
 
@@ -248,8 +263,8 @@ body {
 }
 
 .project_buttons button {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: none;
   background: none;
   cursor: pointer;
@@ -263,8 +278,8 @@ body {
 }
 
 .project_buttons svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   fill: rgb(22, 22, 22);
 }
 .project_image_container {
