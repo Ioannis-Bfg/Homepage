@@ -133,9 +133,11 @@ body {
 
 body {
   display: grid;
-  grid-template-rows: 9fr 9fr 8fr;
+  grid-template-rows: 8fr 9fr 8fr;
   min-height: 260dvh;
+  width: 100%;
   justify-items: center;
+  align-items: center;
   background-color: rgb(231, 255, 247);
 }
 
@@ -171,6 +173,30 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* #hero_background {
+  fill: rgb(46, 9, 9);
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+} */
+
+#hero_wave_bottom {
+  fill: rgb(46, 9, 9);
+  position: absolute;
+  bottom: -21dvh;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
 }
 
 #main_image_container {
@@ -183,6 +209,7 @@ body {
   background-position: 80% 90%;
   -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);
+  border-radius: 5px;
 }
 
 #hero_background {
@@ -190,8 +217,12 @@ body {
   max-width: 100%;
   min-width: 100%;
   aspect-ratio: 3/4;
-  background-color: lightblue;
-  clip-path: polygon(0 0, 100% 0%, 100% 40%, 0 60%);
+  background-image: url("../images/blurry-gradient-haikei.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  /* clip-path: polygon(0 0, 100% 0%, 100% 40%, 0 60%); */
   z-index: -1;
 }
 
@@ -267,12 +298,29 @@ body {
   /* padding: 2rem 16rem; */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  z-index: 1;
 }
 
 #projects h1 {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 2.3em;
+  font-weight: 800;
+  color: white;
+}
+
+.spacer {
+  aspect-ratio: 900/450;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.layer {
+  background-image: url("../images/layered-waves-haikei.svg");
 }
 
 #grid {
@@ -288,10 +336,11 @@ body {
   aspect-ratio: 16/15;
   display: grid;
   grid-template-rows: 6fr 4fr;
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(238, 238, 238);
   -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);
-  color: white;
+  color: rgb(29, 29, 29);
+  border-radius: 5px;
 }
 
 .project_title_buttons {
@@ -308,7 +357,7 @@ body {
 .project_info p:nth-child(2) {
   font-weight: 400;
   font-size: 0.85rem;
-  color: rgb(223, 223, 223);
+  color: rgb(54, 54, 54);
 }
 
 .project_buttons {
@@ -334,7 +383,7 @@ body {
 .project_buttons svg {
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: rgb(22, 22, 22);
 }
 .project_image_container {
   flex-shrink: 0;
@@ -358,5 +407,6 @@ body {
 /* ////////////////PROJECTS///////////////// */
 
 #contact {
-  /* background-color: yellow; */
+  width: 100%;
+  background-color: lightblue;
 }
