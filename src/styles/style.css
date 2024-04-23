@@ -239,9 +239,9 @@ body {
   z-index: -1;
 }
 
-.layer {
+/* .layer {
   background-image: url("../images/layered-waves-haikei.svg");
-}
+} */
 
 .project:nth-child(2) {
   transition-delay: 200ms;
@@ -442,9 +442,9 @@ body {
   z-index: -1;
 }
 
-.layerflip {
+/* .layerflip {
   background-image: url("../images/wave-haikei.svg");
-}
+} */
 
 a {
   text-decoration: none;
