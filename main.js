@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/layered-waves-haikei.svg */ \"./src/images/layered-waves-haikei.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../images/wave-haikei.svg */ \"./src/images/wave-haikei.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* ////////////////////////////////////////// */\r\n\r\n/* @import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\"); */\r\n\r\n:root {\r\n  --text: #07090a;\r\n  --background: #eaf8ff;\r\n  --primary: #0099ff;\r\n  --secondary: #85c3ed;\r\n  --accent: #46b1f8;\r\n}\r\nbody {\r\n  font-family: \"Raleway\", sans-serif;\r\n  background-color: var(--background);\r\n}\r\n\r\nhtml {\r\n  width: 100%;\r\n}\r\nbody {\r\n  overflow-x: hidden;\r\n}\r\n\r\n.part {\r\n  opacity: 0;\r\n  filter: blur(1px);\r\n  transform: translateY(50px);\r\n  transition: all 1s ease 0.1s;\r\n}\r\n\r\n.wave {\r\n  transform: translateY(200px);\r\n  transition: all 1s ease;\r\n}\r\n.waveshow {\r\n  transform: translateY(0px);\r\n  transition: all 1s ease;\r\n}\r\n.show {\r\n  filter: blur(0px);\r\n  opacity: 1;\r\n  transform: translateY(0px);\r\n  transition: all 1s ease 0.1s;\r\n}\r\n\r\n.present:nth-child(2) {\r\n  transition-delay: 0.5s;\r\n}\r\n\r\n#main_container {\r\n  width: 100vw;\r\n  box-sizing: border-box;\r\n\r\n  height: 260dvh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-content: center;\r\n}\r\n\r\n@keyframes fadeDown {\r\n  0% {\r\n    opacity: 0;\r\n    filter: blur(2px);\r\n    transform: translateY(-10px);\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n    filter: blur(0px);\r\n    transform: translateY(0px);\r\n  }\r\n}\r\n\r\n@keyframes fadeIn {\r\n  0% {\r\n    opacity: 0;\r\n    filter: blur(2px);\r\n  }\r\n\r\n  100% {\r\n    opacity: 1;\r\n    filter: blur(0px);\r\n  }\r\n}\r\n\r\n/* ///////////////////////////////////// */\r\n/* ////////////////HERO///////////////// */\r\n\r\n#hero {\r\n  padding: 20vh 0%;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  position: relative;\r\n  /* background-color: lightblue; */\r\n  /* width: 100%; */\r\n}\r\n\r\n#hero_wave_bottom {\r\n  position: absolute;\r\n  bottom: -2rem;\r\n  left: 0;\r\n  width: 100vw;\r\n  overflow: hidden;\r\n  line-height: 0;\r\n  z-index: -1;\r\n}\r\n\r\n#main_image_container {\r\n  /* aspect-ratio: 3/4; */\r\n  width: 350px;\r\n  max-height: 470px;\r\n  z-index: 1;\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  border-radius: 5px;\r\n  overflow: hidden;\r\n}\r\n\r\n#main_image_container img {\r\n  /* background-repeat: no-repeat; */\r\n  /* background-position: 80% 90%; */\r\n  /* background-size: 220%; */\r\n  width: 350px;\r\n  aspect-ratio: 3/4;\r\n  height: 480px;\r\n}\r\n/* \r\n#hero_background {\r\n  position: absolute;\r\n  max-width: 100%;\r\n  min-width: 100%;\r\n  aspect-ratio: 3/4;\r\n\r\n  z-index: -1;\r\n} */\r\n\r\n#hero_text {\r\n  /* border: 2px solid green; */\r\n  aspect-ratio: 16/9;\r\n  width: 600px;\r\n  padding: 1.5rem 3rem;\r\n  position: relative;\r\n  left: -5px;\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  background-color: rgb(255, 255, 255);\r\n  border-radius: 5px;\r\n  font-family: \"Raleway\", sans-serif;\r\n}\r\n\r\n#my_name {\r\n  font-weight: 800;\r\n}\r\n\r\n#hero_text_paragraph {\r\n  opacity: 0;\r\n  animation: fadeDown 0.4s ease-out 2s both;\r\n  display: flex;\r\n  flex-direction: column;\r\n  /* gap: 20px; */\r\n  font-size: 1.3rem;\r\n}\r\n\r\n#hero_text_paragraph h1 {\r\n  font-size: 1.5rem;\r\n  font-weight: bold;\r\n}\r\n\r\n#hero #socials {\r\n  align-self: flex-end;\r\n  display: flex;\r\n  gap: 8px;\r\n}\r\n\r\n#socials a {\r\n  width: 40px;\r\n  height: 40px;\r\n  background: none;\r\n  border: none;\r\n  cursor: pointer;\r\n  scale: 0.9;\r\n  transition: scale 0.3s ease-in;\r\n}\r\n\r\n.socials svg {\r\n  fill: rgb(51, 51, 51);\r\n}\r\n\r\n#socials a:hover {\r\n  scale: 1.1;\r\n  transition: scale 0.1s ease-out;\r\n}\r\n\r\n#github {\r\n  animation: fadeDown 0.2s ease-out 1.3s both;\r\n}\r\n\r\n#linkedin {\r\n  animation: fadeDown 0.2s ease-out 1.4s both;\r\n}\r\n\r\n#email-main {\r\n  animation: fadeDown 0.2s ease-out 1.5s both;\r\n}\r\n\r\n/* ///////////////////////////////////// */\r\n/* ////////////////PROJECTS///////////////// */\r\n\r\n#projects {\r\n  /* border: 2px solid black; */\r\n  padding: 8rem 0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 100px;\r\n  width: 100%;\r\n  z-index: 1;\r\n  height: 100%;\r\n}\r\n\r\n#projects h1 {\r\n  font-size: 2.3em;\r\n  font-weight: 800;\r\n  color: white;\r\n}\r\n\r\n.spacer {\r\n  aspect-ratio: 900/450;\r\n  width: 1920px;\r\n  background-repeat: no-repeat;\r\n  position: relative;\r\n  background-position: center;\r\n  background-size: cover;\r\n  z-index: -1;\r\n}\r\n\r\n.layer {\r\n  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\r\n}\r\n\r\n.project:nth-child(2) {\r\n  transition-delay: 200ms;\r\n}\r\n\r\n.project:nth-child(3) {\r\n  transition-delay: 300ms;\r\n}\r\n\r\n.project:nth-child(4) {\r\n  transition-delay: 400ms;\r\n}\r\n\r\n.project:nth-child(5) {\r\n  transition-delay: 500ms;\r\n}\r\n\r\n.project:nth-child(6) {\r\n  transition-delay: 600ms;\r\n}\r\n\r\n#grid {\r\n  padding: 0% 20vw;\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 50px;\r\n  /* align-items: center; */\r\n  justify-content: space-between;\r\n}\r\n\r\n.project {\r\n  aspect-ratio: 16/19;\r\n  width: clamp(300px, 1fr, 15vw);\r\n  /* height: clamp(250px, 250px, 250px); */\r\n  min-height: 100%;\r\n  display: grid;\r\n  grid-template-rows: 6fr 4fr;\r\n  background-color: var(--primary);\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);\r\n  color: var(--background);\r\n  border-radius: 10px;\r\n}\r\n\r\n.project_title_buttons {\r\n  grid-column: 2/3;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.project_title_buttons p {\r\n  font-weight: 900;\r\n  font-size: 1.2rem;\r\n}\r\n\r\n.project_info p:nth-child(2) {\r\n  font-weight: 600;\r\n  font-size: 0.85rem;\r\n  color: rgb(223, 223, 223);\r\n}\r\n\r\n.project_buttons {\r\n  display: flex;\r\n  gap: 4px;\r\n}\r\n\r\n.project_buttons a {\r\n  border: none;\r\n  background: none;\r\n  cursor: pointer;\r\n  scale: 1;\r\n  transition: scale ease-in 0.3s;\r\n}\r\n\r\n.project_buttons a:hover {\r\n  scale: 1.2;\r\n  transition: scale ease-out 0.1s;\r\n}\r\n\r\n.project_buttons svg {\r\n  width: 30px;\r\n  height: 30px;\r\n  fill: rgb(51, 51, 51);\r\n}\r\n.project_image_container {\r\n  flex-shrink: 0;\r\n  flex-grow: 0;\r\n}\r\n\r\n.project_image_container img {\r\n  width: 100%;\r\n  aspect-ratio: 21/11;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  border-top-left-radius: 10px;\r\n\r\n  border-top-right-radius: 10px;\r\n}\r\n\r\n.project_info {\r\n  margin: 1rem 1rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n}\r\n\r\n/* ///////////////////////////////////// */\r\n/* ////////////////PROJECTS///////////////// */\r\n\r\n#contact {\r\n  margin-top: 5vh;\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: lightblue;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding: 4rem 10rem;\r\n  position: relative;\r\n  box-sizing: border-box;\r\n}\r\n\r\n#contact_container {\r\n  height: clamp(400px, 500px, 15vh);\r\n  box-sizing: border-box;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  gap: 50px;\r\n}\r\n\r\n#contact svg {\r\n  width: 30px;\r\n  height: 30px;\r\n}\r\n\r\n#contact_info {\r\n  padding: 1rem 6rem 1rem 1rem;\r\n  display: flex;\r\n  height: 100%;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\r\n  background-color: var(--primary);\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  border-radius: 10px;\r\n  color: var(--background);\r\n}\r\n\r\n#contact_info {\r\n  color: var(--background);\r\n  font-size: 1.2rem;\r\n}\r\n\r\n#contact_wave {\r\n  position: absolute;\r\n  left: 0;\r\n  width: 100%;\r\n  overflow: hidden;\r\n  line-height: 0;\r\n  z-index: -1;\r\n}\r\n\r\n#contact_image img {\r\n  width: 100%;\r\n  height: 100%;\r\n  border-radius: 10px;\r\n  object-fit: cover;\r\n}\r\n\r\n#contact_image {\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n}\r\n\r\n#phone,\r\n#email {\r\n  display: flex;\r\n  gap: 10px;\r\n  color: var(--background);\r\n  align-items: center;\r\n}\r\n\r\n#phone,\r\n#email svg {\r\n  fill: var(--background);\r\n}\r\n\r\n.spacerflip {\r\n  aspect-ratio: 900/450;\r\n  width: 100%;\r\n  background-repeat: no-repeat;\r\n  position: relative;\r\n  background-position: center;\r\n  background-size: cover;\r\n  z-index: -1;\r\n}\r\n\r\n.layerflip {\r\n  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n@media screen and (max-width: 1400px) {\r\n  #grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 1100px) {\r\n  #contact_container {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  #contact {\r\n    padding-top: 50px;\r\n    padding-bottom: 600px;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 961px) {\r\n  #grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  .project {\r\n    width: 300px;\r\n  }\r\n  #hero {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  #hero_text {\r\n    /* border: 2px solid green; */\r\n    aspect-ratio: 16/9;\r\n    width: 600px;\r\n  }\r\n  #hero_text {\r\n    position: relative;\r\n    bottom: 10px;\r\n  }\r\n\r\n  #contact_container {\r\n    height: clamp(400px, 500px, 15vh);\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    gap: 10px;\r\n  }\r\n  #contact {\r\n    padding-top: 100px;\r\n    padding-bottom: 450px;\r\n  }\r\n\r\n  #contact_info {\r\n    justify-content: space-between;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 780px) {\r\n  #grid {\r\n    grid-template-columns: repeat(1, 1fr);\r\n  }\r\n  #projects h1 {\r\n    color: #1b1b1b;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  #grid {\r\n    grid-template-columns: repeat(1, 1fr);\r\n  }\r\n\r\n  #hero {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  #main_image_container {\r\n    scale: 1;\r\n  }\r\n  #hero_text {\r\n    /* border: 2px solid green; */\r\n    aspect-ratio: 16/9;\r\n    width: 400px;\r\n  }\r\n  #hero_text {\r\n    position: relative;\r\n    bottom: 10px;\r\n  }\r\n\r\n  #projects {\r\n    gap: 0px;\r\n  }\r\n  #projects h1 {\r\n    color: #1b1b1b;\r\n  }\r\n\r\n  #hero_wave_bottom {\r\n    bottom: -1rem;\r\n  }\r\n  #contact_container {\r\n    height: clamp(400px, 500px, 15vh);\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    gap: 10px;\r\n  }\r\n  #contact {\r\n    padding-top: 250px;\r\n    padding-bottom: 400px;\r\n  }\r\n\r\n  #contact_info {\r\n    justify-content: space-between;\r\n  }\r\n}\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://homepage/./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/layered-waves-haikei.svg */ \"./src/images/layered-waves-haikei.svg?6432\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../images/wave-haikei.svg */ \"./src/images/wave-haikei.svg?cd88\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* ////////////////////////////////////////// */\r\n\r\n/* @import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap\"); */\r\n\r\n:root {\r\n  --text: #07090a;\r\n  --background: #eaf8ff;\r\n  --primary: #0099ff;\r\n  --secondary: #85c3ed;\r\n  --accent: #46b1f8;\r\n}\r\nbody {\r\n  font-family: \"Raleway\", sans-serif;\r\n  background-color: var(--background);\r\n}\r\n\r\nhtml {\r\n  width: 100%;\r\n}\r\nbody {\r\n  overflow-x: hidden;\r\n}\r\n\r\n.part {\r\n  opacity: 0;\r\n  filter: blur(1px);\r\n  transform: translateY(50px);\r\n  transition: all 1s ease 0.1s;\r\n}\r\n\r\n.wave {\r\n  transform: translateY(200px);\r\n  transition: all 1s ease;\r\n}\r\n.waveshow {\r\n  transform: translateY(0px);\r\n  transition: all 1s ease;\r\n}\r\n.show {\r\n  filter: blur(0px);\r\n  opacity: 1;\r\n  transform: translateY(0px);\r\n  transition: all 1s ease 0.1s;\r\n}\r\n\r\n.present:nth-child(2) {\r\n  transition-delay: 0.5s;\r\n}\r\n\r\n#main_container {\r\n  width: 100vw;\r\n  box-sizing: border-box;\r\n\r\n  height: 260dvh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-content: center;\r\n}\r\n\r\n@keyframes fadeDown {\r\n  0% {\r\n    opacity: 0;\r\n    filter: blur(2px);\r\n    transform: translateY(-10px);\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n    filter: blur(0px);\r\n    transform: translateY(0px);\r\n  }\r\n}\r\n\r\n@keyframes fadeIn {\r\n  0% {\r\n    opacity: 0;\r\n    filter: blur(2px);\r\n  }\r\n\r\n  100% {\r\n    opacity: 1;\r\n    filter: blur(0px);\r\n  }\r\n}\r\n\r\n/* ///////////////////////////////////// */\r\n/* ////////////////HERO///////////////// */\r\n\r\n#hero {\r\n  padding: 20vh 0%;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  position: relative;\r\n  /* background-color: lightblue; */\r\n  /* width: 100%; */\r\n}\r\n\r\n#hero_wave_bottom {\r\n  position: absolute;\r\n  bottom: -2rem;\r\n  left: 0;\r\n  width: 100vw;\r\n  overflow: hidden;\r\n  line-height: 0;\r\n  z-index: -1;\r\n}\r\n\r\n#main_image_container {\r\n  /* aspect-ratio: 3/4; */\r\n  width: 350px;\r\n  max-height: 470px;\r\n  z-index: 1;\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  border-radius: 5px;\r\n  overflow: hidden;\r\n}\r\n\r\n#main_image_container img {\r\n  /* background-repeat: no-repeat; */\r\n  /* background-position: 80% 90%; */\r\n  /* background-size: 220%; */\r\n  width: 350px;\r\n  aspect-ratio: 3/4;\r\n  height: 480px;\r\n}\r\n/* \r\n#hero_background {\r\n  position: absolute;\r\n  max-width: 100%;\r\n  min-width: 100%;\r\n  aspect-ratio: 3/4;\r\n\r\n  z-index: -1;\r\n} */\r\n\r\n#hero_text {\r\n  /* border: 2px solid green; */\r\n  aspect-ratio: 16/9;\r\n  width: 600px;\r\n  padding: 1.5rem 3rem;\r\n  position: relative;\r\n  left: -5px;\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  background-color: rgb(255, 255, 255);\r\n  border-radius: 5px;\r\n  font-family: \"Raleway\", sans-serif;\r\n}\r\n\r\n#my_name {\r\n  font-weight: 800;\r\n}\r\n\r\n#hero_text_paragraph {\r\n  opacity: 0;\r\n  animation: fadeDown 0.4s ease-out 2s both;\r\n  display: flex;\r\n  flex-direction: column;\r\n  /* gap: 20px; */\r\n  font-size: 1.3rem;\r\n}\r\n\r\n#hero_text_paragraph h1 {\r\n  font-size: 1.5rem;\r\n  font-weight: bold;\r\n}\r\n\r\n#hero #socials {\r\n  align-self: flex-end;\r\n  display: flex;\r\n  gap: 8px;\r\n}\r\n\r\n#socials a {\r\n  width: 40px;\r\n  height: 40px;\r\n  background: none;\r\n  border: none;\r\n  cursor: pointer;\r\n  scale: 0.9;\r\n  transition: scale 0.3s ease-in;\r\n}\r\n\r\n.socials svg {\r\n  fill: rgb(51, 51, 51);\r\n}\r\n\r\n#socials a:hover {\r\n  scale: 1.1;\r\n  transition: scale 0.1s ease-out;\r\n}\r\n\r\n#github {\r\n  animation: fadeDown 0.2s ease-out 1.3s both;\r\n}\r\n\r\n#linkedin {\r\n  animation: fadeDown 0.2s ease-out 1.4s both;\r\n}\r\n\r\n#email-main {\r\n  animation: fadeDown 0.2s ease-out 1.5s both;\r\n}\r\n\r\n/* ///////////////////////////////////// */\r\n/* ////////////////PROJECTS///////////////// */\r\n\r\n#projects {\r\n  /* border: 2px solid black; */\r\n  padding: 8rem 0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 100px;\r\n  width: 100%;\r\n  z-index: 1;\r\n  height: 100%;\r\n}\r\n\r\n#projects h1 {\r\n  font-size: 2.3em;\r\n  font-weight: 800;\r\n  color: white;\r\n}\r\n\r\n.spacer {\r\n  aspect-ratio: 900/450;\r\n  width: 1920px;\r\n  background-repeat: no-repeat;\r\n  position: relative;\r\n  background-position: center;\r\n  background-size: cover;\r\n  z-index: -1;\r\n}\r\n\r\n.layer {\r\n  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\r\n}\r\n\r\n.project:nth-child(2) {\r\n  transition-delay: 200ms;\r\n}\r\n\r\n.project:nth-child(3) {\r\n  transition-delay: 300ms;\r\n}\r\n\r\n.project:nth-child(4) {\r\n  transition-delay: 400ms;\r\n}\r\n\r\n.project:nth-child(5) {\r\n  transition-delay: 500ms;\r\n}\r\n\r\n.project:nth-child(6) {\r\n  transition-delay: 600ms;\r\n}\r\n\r\n#grid {\r\n  padding: 0% 20vw;\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 50px;\r\n  /* align-items: center; */\r\n  justify-content: space-between;\r\n}\r\n\r\n.project {\r\n  aspect-ratio: 16/19;\r\n  width: clamp(300px, 1fr, 15vw);\r\n  /* height: clamp(250px, 250px, 250px); */\r\n  min-height: 100%;\r\n  display: grid;\r\n  grid-template-rows: 6fr 4fr;\r\n  background-color: var(--primary);\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.1);\r\n  color: var(--background);\r\n  border-radius: 10px;\r\n}\r\n\r\n.project_title_buttons {\r\n  grid-column: 2/3;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n.project_title_buttons p {\r\n  font-weight: 900;\r\n  font-size: 1.2rem;\r\n}\r\n\r\n.project_info p:nth-child(2) {\r\n  font-weight: 600;\r\n  font-size: 0.85rem;\r\n  color: rgb(223, 223, 223);\r\n}\r\n\r\n.project_buttons {\r\n  display: flex;\r\n  gap: 4px;\r\n}\r\n\r\n.project_buttons a {\r\n  border: none;\r\n  background: none;\r\n  cursor: pointer;\r\n  scale: 1;\r\n  transition: scale ease-in 0.3s;\r\n}\r\n\r\n.project_buttons a:hover {\r\n  scale: 1.2;\r\n  transition: scale ease-out 0.1s;\r\n}\r\n\r\n.project_buttons svg {\r\n  width: 30px;\r\n  height: 30px;\r\n  fill: rgb(51, 51, 51);\r\n}\r\n.project_image_container {\r\n  flex-shrink: 0;\r\n  flex-grow: 0;\r\n}\r\n\r\n.project_image_container img {\r\n  width: 100%;\r\n  aspect-ratio: 21/11;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  border-top-left-radius: 10px;\r\n\r\n  border-top-right-radius: 10px;\r\n}\r\n\r\n.project_info {\r\n  margin: 1rem 1rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n}\r\n\r\n/* ///////////////////////////////////// */\r\n/* ////////////////PROJECTS///////////////// */\r\n\r\n#contact {\r\n  margin-top: 5vh;\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: lightblue;\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding: 4rem 10rem;\r\n  position: relative;\r\n  box-sizing: border-box;\r\n}\r\n\r\n#contact_container {\r\n  height: clamp(400px, 500px, 15vh);\r\n  box-sizing: border-box;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  gap: 50px;\r\n}\r\n\r\n#contact svg {\r\n  width: 30px;\r\n  height: 30px;\r\n}\r\n\r\n#contact_info {\r\n  padding: 1rem 6rem 1rem 1rem;\r\n  display: flex;\r\n  height: 100%;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\r\n  background-color: var(--primary);\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  border-radius: 10px;\r\n  color: var(--background);\r\n}\r\n\r\n#contact_info {\r\n  color: var(--background);\r\n  font-size: 1.2rem;\r\n}\r\n\r\n#contact_wave {\r\n  position: absolute;\r\n  left: 0;\r\n  width: 100%;\r\n  overflow: hidden;\r\n  line-height: 0;\r\n  z-index: -1;\r\n}\r\n\r\n#contact_image img {\r\n  width: 100%;\r\n  height: 100%;\r\n  border-radius: 10px;\r\n  object-fit: cover;\r\n}\r\n\r\n#contact_image {\r\n  -webkit-box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.29);\r\n}\r\n\r\n#phone,\r\n#email {\r\n  display: flex;\r\n  gap: 10px;\r\n  color: var(--background);\r\n  align-items: center;\r\n}\r\n\r\n#phone,\r\n#email svg {\r\n  fill: var(--background);\r\n}\r\n\r\n.spacerflip {\r\n  aspect-ratio: 900/450;\r\n  width: 100%;\r\n  background-repeat: no-repeat;\r\n  position: relative;\r\n  background-position: center;\r\n  background-size: cover;\r\n  z-index: -1;\r\n}\r\n\r\n.layerflip {\r\n  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n@media screen and (max-width: 1400px) {\r\n  #grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 1100px) {\r\n  #contact_container {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  #contact {\r\n    padding-top: 50px;\r\n    padding-bottom: 600px;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 961px) {\r\n  #grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  .project {\r\n    width: 300px;\r\n  }\r\n  #hero {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  #hero_text {\r\n    /* border: 2px solid green; */\r\n    aspect-ratio: 16/9;\r\n    width: 600px;\r\n  }\r\n  #hero_text {\r\n    position: relative;\r\n    bottom: 10px;\r\n  }\r\n\r\n  #contact_container {\r\n    height: clamp(400px, 500px, 15vh);\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    gap: 10px;\r\n  }\r\n  #contact {\r\n    padding-top: 100px;\r\n    padding-bottom: 450px;\r\n  }\r\n\r\n  #contact_info {\r\n    justify-content: space-between;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 780px) {\r\n  #grid {\r\n    grid-template-columns: repeat(1, 1fr);\r\n  }\r\n  #projects h1 {\r\n    color: #1b1b1b;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  #grid {\r\n    grid-template-columns: repeat(1, 1fr);\r\n  }\r\n\r\n  #hero {\r\n    display: flex;\r\n    flex-direction: column;\r\n  }\r\n  #main_image_container {\r\n    scale: 1;\r\n  }\r\n  #hero_text {\r\n    /* border: 2px solid green; */\r\n    aspect-ratio: 16/9;\r\n    width: 400px;\r\n  }\r\n  #hero_text {\r\n    position: relative;\r\n    bottom: 10px;\r\n  }\r\n\r\n  #projects {\r\n    gap: 0px;\r\n  }\r\n  #projects h1 {\r\n    color: #1b1b1b;\r\n  }\r\n\r\n  #hero_wave_bottom {\r\n    bottom: -1rem;\r\n  }\r\n  #contact_container {\r\n    height: clamp(400px, 500px, 15vh);\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    gap: 10px;\r\n  }\r\n  #contact {\r\n    padding-top: 250px;\r\n    padding-bottom: 400px;\r\n  }\r\n\r\n  #contact_info {\r\n    justify-content: space-between;\r\n  }\r\n}\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://homepage/./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -61,6 +61,127 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    opt
 
 "use strict";
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://homepage/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./src/images/Library .png":
+/*!*********************************!*\
+  !*** ./src/images/Library .png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/Library .png\");\n\n//# sourceURL=webpack://homepage/./src/images/Library_.png?");
+
+/***/ }),
+
+/***/ "./src/images/Todo List.png":
+/*!**********************************!*\
+  !*** ./src/images/Todo List.png ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/Todo List.png\");\n\n//# sourceURL=webpack://homepage/./src/images/Todo_List.png?");
+
+/***/ }),
+
+/***/ "./src/images/battleship.png":
+/*!***********************************!*\
+  !*** ./src/images/battleship.png ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/battleship.png\");\n\n//# sourceURL=webpack://homepage/./src/images/battleship.png?");
+
+/***/ }),
+
+/***/ "./src/images/hero.jpg":
+/*!*****************************!*\
+  !*** ./src/images/hero.jpg ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/hero.jpg\");\n\n//# sourceURL=webpack://homepage/./src/images/hero.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/layered-waves-haikei.svg?e76f":
+/*!*********************************************!*\
+  !*** ./src/images/layered-waves-haikei.svg ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/layered-waves-haikei.svg\");\n\n//# sourceURL=webpack://homepage/./src/images/layered-waves-haikei.svg?");
+
+/***/ }),
+
+/***/ "./src/images/office.jpg":
+/*!*******************************!*\
+  !*** ./src/images/office.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/office.jpg\");\n\n//# sourceURL=webpack://homepage/./src/images/office.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/patras.jpg":
+/*!*******************************!*\
+  !*** ./src/images/patras.jpg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/patras.jpg\");\n\n//# sourceURL=webpack://homepage/./src/images/patras.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/restaurant.png":
+/*!***********************************!*\
+  !*** ./src/images/restaurant.png ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/restaurant.png\");\n\n//# sourceURL=webpack://homepage/./src/images/restaurant.png?");
+
+/***/ }),
+
+/***/ "./src/images/tictactoe.png":
+/*!**********************************!*\
+  !*** ./src/images/tictactoe.png ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/tictactoe.png\");\n\n//# sourceURL=webpack://homepage/./src/images/tictactoe.png?");
+
+/***/ }),
+
+/***/ "./src/images/wave-haikei.svg?ceba":
+/*!************************************!*\
+  !*** ./src/images/wave-haikei.svg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/wave-haikei.svg\");\n\n//# sourceURL=webpack://homepage/./src/images/wave-haikei.svg?");
+
+/***/ }),
+
+/***/ "./src/images/weatherapp.png":
+/*!***********************************!*\
+  !*** ./src/images/weatherapp.png ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/weatherapp.png\");\n\n//# sourceURL=webpack://homepage/./src/images/weatherapp.png?");
 
 /***/ }),
 
@@ -169,128 +290,29 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/reset.css */ \"./src/styles/reset.css\");\n/* harmony import */ var _images_battleship_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/battleship.png */ \"./src/images/battleship.png\");\n/* harmony import */ var _images_hero_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/hero.jpg */ \"./src/images/hero.jpg\");\n/* harmony import */ var _images_layered_waves_haikei_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/layered-waves-haikei.svg */ \"./src/images/layered-waves-haikei.svg\");\n/* harmony import */ var _images_Library_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/Library .png */ \"./src/images/Library .png\");\n/* harmony import */ var _images_office_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/office.jpg */ \"./src/images/office.jpg\");\n/* harmony import */ var _images_patras_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/patras.jpg */ \"./src/images/patras.jpg\");\n/* harmony import */ var _images_restaurant_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/restaurant.png */ \"./src/images/restaurant.png\");\n/* harmony import */ var _images_tictactoe_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/tictactoe.png */ \"./src/images/tictactoe.png\");\n/* harmony import */ var _images_Todo_List_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/Todo List.png */ \"./src/images/Todo List.png\");\n/* harmony import */ var _images_wave_haikei_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/wave-haikei.svg */ \"./src/images/wave-haikei.svg\");\n/* harmony import */ var _images_weatherapp_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/weatherapp.png */ \"./src/images/weatherapp.png\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst observer = new IntersectionObserver((entries) => {\r\n  entries.forEach((entry) => {\r\n    console.log(entry);\r\n    if (entry.isIntersecting) {\r\n      entry.target.classList.add(\"show\");\r\n    } else {\r\n      entry.target.classList.remove(\"show\");\r\n    }\r\n  });\r\n});\r\n\r\nconst partElements = document.querySelectorAll(\".part\");\r\npartElements.forEach((el) => observer.observe(el));\r\n\r\nconst waveObserver = new IntersectionObserver((entries) => {\r\n  entries.forEach((entry) => {\r\n    console.log(entry);\r\n    if (entry.isIntersecting) {\r\n      entry.target.classList.add(\"waveshow\");\r\n    } else {\r\n      entry.target.classList.remove(\"waveshow\");\r\n    }\r\n  });\r\n});\r\n\r\nconst waveElements = document.querySelectorAll(\".wave\");\r\nwaveElements.forEach((el) => waveObserver.observe(el));\r\n\n\n//# sourceURL=webpack://homepage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/reset.css */ \"./src/styles/reset.css\");\n/* harmony import */ var _images_battleship_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/battleship.png */ \"./src/images/battleship.png\");\n/* harmony import */ var _images_hero_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/hero.jpg */ \"./src/images/hero.jpg\");\n/* harmony import */ var _images_layered_waves_haikei_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/layered-waves-haikei.svg */ \"./src/images/layered-waves-haikei.svg?e76f\");\n/* harmony import */ var _images_Library_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/Library .png */ \"./src/images/Library .png\");\n/* harmony import */ var _images_office_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/office.jpg */ \"./src/images/office.jpg\");\n/* harmony import */ var _images_patras_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/patras.jpg */ \"./src/images/patras.jpg\");\n/* harmony import */ var _images_restaurant_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/restaurant.png */ \"./src/images/restaurant.png\");\n/* harmony import */ var _images_tictactoe_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/tictactoe.png */ \"./src/images/tictactoe.png\");\n/* harmony import */ var _images_Todo_List_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/Todo List.png */ \"./src/images/Todo List.png\");\n/* harmony import */ var _images_wave_haikei_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/wave-haikei.svg */ \"./src/images/wave-haikei.svg?ceba\");\n/* harmony import */ var _images_weatherapp_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/weatherapp.png */ \"./src/images/weatherapp.png\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst main_container = document.querySelector(\"#main_container\");\r\n\r\nconst observer = new IntersectionObserver((entries) => {\r\n  entries.forEach((entry) => {\r\n    console.log(entry);\r\n    if (entry.isIntersecting) {\r\n      entry.target.classList.add(\"show\");\r\n    } else {\r\n      entry.target.classList.remove(\"show\");\r\n    }\r\n  });\r\n});\r\n\r\nconst partElements = document.querySelectorAll(\".part\");\r\npartElements.forEach((el) => observer.observe(el));\r\n\r\nconst waveObserver = new IntersectionObserver((entries) => {\r\n  entries.forEach((entry) => {\r\n    console.log(entry);\r\n    if (entry.isIntersecting) {\r\n      entry.target.classList.add(\"waveshow\");\r\n    } else {\r\n      entry.target.classList.remove(\"waveshow\");\r\n    }\r\n  });\r\n});\r\n\r\nconst waveElements = document.querySelectorAll(\".wave\");\r\nwaveElements.forEach((el) => waveObserver.observe(el));\r\n\n\n//# sourceURL=webpack://homepage/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/images/Library .png":
-/*!*********************************!*\
-  !*** ./src/images/Library .png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"4c580773a4cfdcf6c29d.png\";\n\n//# sourceURL=webpack://homepage/./src/images/Library_.png?");
-
-/***/ }),
-
-/***/ "./src/images/Todo List.png":
-/*!**********************************!*\
-  !*** ./src/images/Todo List.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"f88aa6d62cde788d3e28.png\";\n\n//# sourceURL=webpack://homepage/./src/images/Todo_List.png?");
-
-/***/ }),
-
-/***/ "./src/images/battleship.png":
-/*!***********************************!*\
-  !*** ./src/images/battleship.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"3d8baffacd49fee506a2.png\";\n\n//# sourceURL=webpack://homepage/./src/images/battleship.png?");
-
-/***/ }),
-
-/***/ "./src/images/hero.jpg":
-/*!*****************************!*\
-  !*** ./src/images/hero.jpg ***!
-  \*****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"9976fc6914d6559be8d9.jpg\";\n\n//# sourceURL=webpack://homepage/./src/images/hero.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/layered-waves-haikei.svg":
+/***/ "./src/images/layered-waves-haikei.svg?6432":
 /*!*********************************************!*\
   !*** ./src/images/layered-waves-haikei.svg ***!
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"810d323eb78046f55b06.svg\";\n\n//# sourceURL=webpack://homepage/./src/images/layered-waves-haikei.svg?");
+eval("module.exports = __webpack_require__.p + \"f9f69e5934cb78dd9a34.svg\";\n\n//# sourceURL=webpack://homepage/./src/images/layered-waves-haikei.svg?");
 
 /***/ }),
 
-/***/ "./src/images/office.jpg":
-/*!*******************************!*\
-  !*** ./src/images/office.jpg ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"687c0d0bd6e853e66996.jpg\";\n\n//# sourceURL=webpack://homepage/./src/images/office.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/patras.jpg":
-/*!*******************************!*\
-  !*** ./src/images/patras.jpg ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"d6d2395c020c638ca595.jpg\";\n\n//# sourceURL=webpack://homepage/./src/images/patras.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/restaurant.png":
-/*!***********************************!*\
-  !*** ./src/images/restaurant.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"a7f9bdbb48cf553d7f76.png\";\n\n//# sourceURL=webpack://homepage/./src/images/restaurant.png?");
-
-/***/ }),
-
-/***/ "./src/images/tictactoe.png":
-/*!**********************************!*\
-  !*** ./src/images/tictactoe.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"07e2574aa64b31b82e7b.png\";\n\n//# sourceURL=webpack://homepage/./src/images/tictactoe.png?");
-
-/***/ }),
-
-/***/ "./src/images/wave-haikei.svg":
+/***/ "./src/images/wave-haikei.svg?cd88":
 /*!************************************!*\
   !*** ./src/images/wave-haikei.svg ***!
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"5e508e930c9200f82546.svg\";\n\n//# sourceURL=webpack://homepage/./src/images/wave-haikei.svg?");
-
-/***/ }),
-
-/***/ "./src/images/weatherapp.png":
-/*!***********************************!*\
-  !*** ./src/images/weatherapp.png ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"a0630b8ff8072fb58786.png\";\n\n//# sourceURL=webpack://homepage/./src/images/weatherapp.png?");
+eval("module.exports = __webpack_require__.p + \"eb244aab42de2ab373dd.svg\";\n\n//# sourceURL=webpack://homepage/./src/images/wave-haikei.svg?");
 
 /***/ })
 
