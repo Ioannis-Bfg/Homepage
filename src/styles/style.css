@@ -474,9 +474,6 @@ a {
   .project {
     width: 300px;
   }
-  #hero_text {
-    /* scale: 0.7; */
-  }
   #hero {
     display: flex;
     flex-direction: column;
@@ -503,9 +500,7 @@ a {
     padding-top: 100px;
     padding-bottom: 450px;
   }
-  #contact_image {
-    /* padding-bottom: 40px; */
-  }
+
   #contact_info {
     justify-content: space-between;
   }
@@ -524,9 +519,7 @@ a {
   #grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  #hero_text {
-    /* scale: 0.7; */
-  }
+
   #hero {
     display: flex;
     flex-direction: column;
@@ -566,9 +559,7 @@ a {
     padding-top: 250px;
     padding-bottom: 400px;
   }
-  #contact_image {
-    /* padding-bottom: 40px; */
-  }
+
   #contact_info {
     justify-content: space-between;
   }
