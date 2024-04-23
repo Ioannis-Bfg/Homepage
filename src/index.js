@@ -13,12 +13,6 @@ import todolist from "./images/Todo List.png";
 import wavehaike from "./images/wave-haikei.svg";
 import weatherapp from "./images/weatherapp.png";
 
-const layer = document.querySelector(".layer");
-
-layer.style.backgroundImage = `url(${layerwave})`;
-
-const layerflip = document.querySelector(".layerflip");
-layerflip.style.backgroundImage = `url(${wavehaike})`;
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
