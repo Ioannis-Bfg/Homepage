@@ -587,4 +587,11 @@ a {
   #contact_info {
     font-size: 0.9rem;
   }
+  .part {
+    transform: translateY(10px);
+  }
+
+  .wave {
+    transform: translateY(50px);
+  }
 }
