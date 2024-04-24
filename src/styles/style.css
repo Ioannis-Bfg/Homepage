@@ -508,7 +508,7 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
   #main_container {
-    height: 300dvh;
+    height: 300svh;
   }
   /* #projects h1 {
     color: #1b1b1b;
@@ -566,7 +566,7 @@ a {
 }
 
 @media screen and (max-width: 450px) {
-  html {
+  body {
     overflow-x: hidden;
   }
   #hero_text {
@@ -577,7 +577,7 @@ a {
   }
 
   #main_container {
-    height: 340dvh;
+    height: 340dsvh;
   }
 
   #contact_container {
