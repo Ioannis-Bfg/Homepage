@@ -577,7 +577,7 @@ a {
   }
 
   #main_container {
-    height: 340dsvh;
+    height: 340svh;
   }
 
   #contact_container {
@@ -588,10 +588,10 @@ a {
     font-size: 0.9rem;
   }
   .part {
-    transform: translateY(10px);
+    transform: translateY(0px);
   }
 
   .wave {
-    transform: translateY(50px);
+    transform: translateY(0px);
   }
 }
