@@ -589,8 +589,8 @@ a {
   }
   .part {
     transform: translateY(0px);
+    opacity: 1;
   }
-
   .wave {
     transform: translateY(0px);
   }
