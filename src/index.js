@@ -15,7 +15,6 @@ import weatherapp from "./images/weatherapp.png";
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
@@ -29,7 +28,6 @@ partElements.forEach((el) => observer.observe(el));
 
 const waveObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("waveshow");
     } else {
@@ -40,3 +38,16 @@ const waveObserver = new IntersectionObserver((entries) => {
 
 const waveElements = document.querySelectorAll(".wave");
 waveElements.forEach((el) => waveObserver.observe(el));
+
+const contactObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("contact_wave_show");
+    } else {
+      entry.target.classList.remove("contact_wave_show");
+    }
+  });
+});
+
+const contactElements = document.querySelectorAll(".contact_wave");
+contactElements.forEach((el) => contactObserver.observe(el));
