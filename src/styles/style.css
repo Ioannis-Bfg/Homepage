@@ -594,4 +594,7 @@ a {
   .wave {
     transform: translateY(0px);
   }
+  * {
+    transition: none !important;
+  }
 }
