@@ -507,9 +507,12 @@ a {
   #grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  #projects h1 {
-    color: #1b1b1b;
+  #main_container {
+    height: 300dvh;
   }
+  /* #projects h1 {
+    color: #1b1b1b;
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -537,9 +540,9 @@ a {
   #projects {
     gap: 0px;
   }
-  #projects h1 {
+  /* #projects h1 {
     color: #1b1b1b;
-  }
+  } */
 
   #hero_wave_bottom {
     bottom: -1rem;
@@ -563,11 +566,18 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+  html {
+    overflow-x: hidden;
+  }
   #hero_text {
     width: 80vw;
   }
   #main_image_container {
     width: 75vw;
+  }
+
+  #main_container {
+    height: 340dvh;
   }
 
   #contact_container {
